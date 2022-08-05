@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /* Universal Selector */
+        * {
+            color: orange;
+            font-size: 20px;
+        }
+
+        /* Type Selector */
+        h1 {
+            color: red;
+            font-size: 50px;
+            border: 1px solid red;
+        }
+
+        /* Id Selector */
+        #myH1 {
+            color: purple;
+            font-size: 30px;
+            border: 1px solid red;
+        }
+
+        /* class Selector */
+        .para {
+            color: blue;
+            background-color: black;
+        }
+
+        /* Attribute Selector */
+        [id = "abc"] {
+            color: red;
+            background-color: orange;
+        }
+
+        /* Grouping Selector */
+        h1, #myH1, h2 {
+            background-color: purple;
+        }
+
+        /* Pseudo Selectors */
+        /* Pseudo Class Selector */
+        /* Pseudo Element Selector */
+
+        /* Pseudo Class Selector */
+        :hover {
+            color: red;
+        }
+
+        li:last-child {
+            color: pink;
+        }
+
+        h1:first-child {
+            color: indigo;
+        }
+
+        p:nth-child(6) {
+            color: blue;
+        }
+
+        h1:before{
+            content: '😁';
+        }
+
+        h1:after{
+            content: '😋';
+        }
+
+        h1:active{
+            color: black;
+        }
+
+        /* After visiting a link*/
+        :visited{
+            color: orange;
+        }
+
+        input:focus{
+            background-color: orange;
+        }
+
+
+        /* Pseudo Element Selector */
+        p::first-letter{
+            color: green;
+            font-size: 30px;
+        }
+
+        p::first-line{
+            color: orange;
+        }
+
+        input::placeholder{
+            color: red;
+        }
+
+        input::selection{
+            background-color: purple;
+        }
+
+        li::marker{
+            content: '💬';
+        }
+
+    </style>
+</head>
+<body>
+<h1>Cascading Style Sheets</h1>
+<h1 id="myH1">Hello there How are you..!</h1>
+<a href="http://google.com" target="_blank">Go To Ijse</a>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aliquam asperiores, aspernatur corporis
+    deleniti eius hic incidunt laboriosam magnam molestiae obcaecati quidem quos ratione sint. Harum in tenetur
+    veritatis!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iusto sit voluptas. Aliquam consequatur, dicta
+    ea error est illo libero nemo quasi
+    quisquam tempore? Architecto minima soluta ut. Quam, reprehenderit?</p>
+<input type="text">
+
+<ol>
+    <li id="abc">GDSE</li>
+    <li>CMJD</li>
+    <li>CMJD</li>
+    <li>RWAD</li>
+</ol>
+
+<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aliquam asperiores,
+    aspernatur corporis deleniti eius hic incidunt laboriosam magnam molestiae obcaecati quidem quos ratione sint. Harum
+    in tenetur veritatis!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iusto sit voluptas. Aliquam consequatur, dicta
+    ea error est illo libero nemo quasi
+    quisquam tempore? Architecto minima soluta ut. Quam, reprehenderit?</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aliquam asperiores, aspernatur corporis
+    deleniti eius hic incidunt laboriosam magnam molestiae obcaecati quidem quos ratione sint. Harum in tenetur
+    veritatis!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iusto sit voluptas. Aliquam consequatur, dicta
+    ea error est illo libero nemo quasi
+    quisquam tempore? Architecto minima soluta ut. Quam, reprehenderit?</p>
+
+<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias aliquam asperiores,
+    aspernatur corporis deleniti eius hic incidunt laboriosam magnam molestiae obcaecati quidem quos ratione sint. Harum
+    in tenetur veritatis!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iusto sit voluptas. Aliquam consequatur, dicta
+    ea error est illo libero nemo quasi
+    quisquam tempore? Architecto minima soluta ut. Quam, reprehenderit?</p>
+
+<section>
+    <h1>Hello</h1>
+    <h1>There</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at corporis, exercitationem, iure iusto magni
+        minus molestiae natus nemo numquam officiis praesentium quibusdam, ratione repellat sequi suscipit ullam vitae
+        voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at corporis, exercitationem, iure iusto magni
+        minus molestiae natus nemo numquam officiis praesentium quibusdam, ratione repellat sequi suscipit ullam vitae
+        voluptatum.</p>
+    <h3>Hello</h3>
+</section>
+
+</body>
+</html>
