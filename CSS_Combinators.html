@@ -5,9 +5,12 @@
     <title>CSS Combinators.!</title>
 
     <style>
-        /* Child Combinator */
+        /* Child Combinator (Select direct child) */
         section > h1 {
             color: red;
+        }
+        body>section>article>p{
+            background-color: orange;
         }
 
     </style>
@@ -22,6 +25,11 @@
         <li>C</li>
         <li>D</li>
     </ul>
+    <article>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at atque corporis cupiditate eligendi ipsam
+            iste laudantium maxime molestias nam natus necessitatibus nisi odit optio praesentium, ratione, tempora
+            ullam? Quasi.</p>
+    </article>
 </section>
 </body>
 </html>
