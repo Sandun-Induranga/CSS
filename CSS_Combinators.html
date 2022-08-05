@@ -24,6 +24,11 @@
             color: purple;
         }
 
+        /* General Siblings Combinator (Select same level childs) */
+        h1 ~ ul {
+            color: green;
+        }
+
     </style>
 </head>
 <body>
@@ -41,7 +46,19 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at atque corporis cupiditate eligendi ipsam
             iste laudantium maxime molestias nam natus necessitatibus nisi odit optio praesentium, ratione, tempora
             ullam? Quasi.</p>
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ul>
     </article>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ul>
 </section>
 </body>
 </html>
