@@ -9,13 +9,19 @@
         section > h1 {
             color: red;
         }
-        body>section>article>p{
+
+        body > section > article > p {
             background-color: orange;
         }
 
         /* Descendent Combinator (Select any child) */
-        body h1{
+        body h1 {
             color: red;
+        }
+
+        /* Adjacent Combinator (if ul located next to h1) */
+        h1 + ul {
+            color: purple;
         }
 
     </style>
@@ -30,6 +36,7 @@
         <li>C</li>
         <li>D</li>
     </ul>
+    <p>lsdfkjfdskl</p>
     <article>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at atque corporis cupiditate eligendi ipsam
             iste laudantium maxime molestias nam natus necessitatibus nisi odit optio praesentium, ratione, tempora
