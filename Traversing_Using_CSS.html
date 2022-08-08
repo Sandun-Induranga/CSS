@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Let's Traverse Using CSS selectors and Combinators</title>
-
     <style>
-        section > div > article > div + section > ul:last-child > li:nth-child(2) {
+        h1:first-child {
             color: red;
+            background-color: purple;
         }
+
+        body > article > ul:last-child > li > ol > li:nth-child(2) {
+            color: red;
+            background-color: purple;
+        }
+
+        article > h1 {
+            color: red;
+            background-color: purple;
+        }
+
+        section > ul:last-child > li > ol > li:first-child {
+            color: red;
+            background-color: purple;
+        }
+
     </style>
 </head>
 <body>
-<h1>CSS Traversing Using CSS selectors and Combinators</h1>
 <main>
+    <h1>Select This H1 Using CSS Traversing</h1>
     <article>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
             temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
@@ -22,8 +38,37 @@
             <li>CMJD</li>
             <li>GDSE</li>
         </ul>
+        <ul>
+            <li>Hello There</li>
+            <li>CMJD</li>
+            <li>GDSE</li>
+        </ul>
     </article>
 </main>
+<h1>Hello there how are you</h1>
+<article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+        temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
+        mollitia odio reiciendis voluptatem.</p>
+    <h1>Select This one also</h1>
+    <ul>
+        <li>Hello There</li>
+        <li>CMJD</li>
+        <li>GDSE</li>
+    </ul>
+    <ul>
+        <li>Hello There</li>
+        <li>
+            <ol>
+                <li>One</li>
+                <li>Select This</li>
+                <li>Three</li>
+            </ol>
+        </li>
+        <li>GDSE</li>
+    </ul>
+</article>
+
 <main>
     <section id="firstSection">
         <article>
@@ -68,7 +113,7 @@
                     </ul>
                     <ul>
                         <li>Hello There</li>
-                        <li>GDSE- selected- you should chanage the font color and size of this</li>
+                        <li>GDSE</li>
                         <li>CMJD</li>
                     </ul>
                 </section>
@@ -76,6 +121,26 @@
         </div>
         <div>
             <section>
+                <section>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+                        temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et,
+                        eveniet
+                        mollitia odio reiciendis voluptatem.</p>
+                    <ul>
+                        <li>Wrong selection</li>
+                    </ul>
+                    <ul>
+                        <li>Hello There</li>
+                        <li>GDSE</li>
+                        <li>
+                            <ol>
+                                <li>Select This one also</li>
+                                <li>Test</li>
+                                <li>Test 4</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </section>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
                     temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
                     mollitia odio reiciendis voluptatem.</p>
@@ -88,9 +153,11 @@
         </div>
     </section>
 </main>
+
 <main>
 
 </main>
+
 <article>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
         temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
