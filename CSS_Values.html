@@ -67,24 +67,40 @@
         /*div > p {*/
         /*    font-size: 1em;*/
         /*}*/
-        html{
-            font-size: 40px;
-        }
-        body{
-            font-size: 20px;
+
+        /*html {*/
+        /*    font-size: 40px;*/
+        /*}*/
+
+        /*body {*/
+        /*    font-size: 20px;*/
+        /*}*/
+
+        /*div {*/
+        /*    font-size: 40px;*/
+        /*}*/
+
+        /*!* rem get the html element font-size      rem = root element *!*/
+        /*div > h1 {*/
+        /*    font-size: 3rem;*/
+        /*}*/
+
+        /*div > p {*/
+        /*    font-size: 1rem;*/
+        /*}*/
+
+        /* Percentage */
+        section{
+            width: 800px;
+            height: 500px;
+            border: 2px solid red;
         }
 
-        div {
-            font-size: 40px;
+        section>div{
+            width: 80%;
         }
-
-        /* rem get the html element font-size      rem = root element */
-        div > h1 {
-            font-size: 3rem;
-        }
-
-        div > p {
-            font-size: 1rem;
+        section>div>p{
+            font-size: 20%;
         }
 
     </style>
@@ -92,19 +108,31 @@
 </head>
 <body>
 <!--<h1>CSS Measurement Units</h1>-->
-<div>
-    <h1>Heading</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque delectus dicta dignissimos illum ipsa
-        ipsam labore odit quos unde. Accusamus ea et eveniet illo obcaecati similique tempora. Delectus, impedit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque delectus dicta dignissimos illum ipsa
-        ipsam labore odit quos unde. Accusamus ea et eveniet illo obcaecati similique tempora. Delectus, impedit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque delectus dicta dignissimos illum ipsa
-        ipsam labore odit quos unde. Accusamus ea et eveniet illo obcaecati similique tempora. Delectus, impedit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque delectus dicta dignissimos illum ipsa
-        ipsam labore odit quos unde. Accusamus ea et eveniet illo obcaecati similique tempora. Delectus, impedit.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque delectus dicta dignissimos illum ipsa
-        ipsam labore odit quos unde. Accusamus ea et eveniet illo obcaecati similique tempora. Delectus, impedit.</p>
-</div>
+<section>
+    <div>
+        <h1>Heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque delectus dicta dignissimos illum
+            ipsa
+            ipsam labore odit quos unde. Accusamus ea et eveniet illo obcaecati similique tempora. Delectus,
+            impedit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque delectus dicta dignissimos illum
+            ipsa
+            ipsam labore odit quos unde. Accusamus ea et eveniet illo obcaecati similique tempora. Delectus,
+            impedit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque delectus dicta dignissimos illum
+            ipsa
+            ipsam labore odit quos unde. Accusamus ea et eveniet illo obcaecati similique tempora. Delectus,
+            impedit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque delectus dicta dignissimos illum
+            ipsa
+            ipsam labore odit quos unde. Accusamus ea et eveniet illo obcaecati similique tempora. Delectus,
+            impedit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque delectus dicta dignissimos illum
+            ipsa
+            ipsam labore odit quos unde. Accusamus ea et eveniet illo obcaecati similique tempora. Delectus,
+            impedit.</p>
+    </div>
+</section>
 <!--<div></div>-->
 </body>
 </html>
