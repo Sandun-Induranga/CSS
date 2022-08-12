@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <title>Cascading Style Sheets</title>
     <style>
-        /*1*/
-        h1 {
+
+        /*101*/
+        h1#selectID{
             color: red;
         }
 
-        /*100*/
-        #selectID {
+        /*11*/
+        h1.selectClass{
+            color: deeppink;
+        }
+
+        /*111*/
+        h1#selectID.selectClass{
+            color: burlywood;
+        }
+
+        /*110*/
+        .mainClass #selectID{
             color: green;
         }
 
+
         /*10*/
-        .selectClass {
+        .selectClass{
             color: yellow;
         }
 
@@ -24,21 +36,30 @@
             color: orange;
         }
 
-        /*14*/
-        body > main > section:nth-child(2) h1 {
+        /*24*/
+        body>main>section:nth-child(2) h1{
             color: aqua;
         }
 
-        /*26*/
-        body > main > section:nth-child(2) > article > div:nth-child(2) > h1 {
+        /*36*/
+        body>main>section:nth-child(2)>article>div:nth-child(2)>h1.selectClass{
             color: chocolate;
         }
 
-        /*26*/
-        body > main > section:nth-child(2) > article > div:nth-child(2) h1 {
+        /*35*/
+        body>main>section:nth-child(2)>article>div:nth-child(2) h1.selectClass{
             color: darkblue;
         }
 
+        /*335*/
+        body>main.mainClass#mainID>section:nth-child(2)>article#mainArticle.mainArticle>div#selected-div:nth-child(2) h1.selectClass{
+            color: darkmagenta;
+        }
+
+        /*20*/
+        .mainArticle .selectClass{
+            color: blueviolet;
+        }
 
     </style>
 </head>
@@ -48,7 +69,7 @@
     <section id="mainSection" class="mainSection">
         <article id="mainArticle" class="mainArticle">
             <div></div>
-            <div id="selected div" class="selectedClass">
+            <div id="selected-div" class="selectedClass">
                 <h1 id="selectID" class="selectClass">Hello there..! Cascade Style Sheets</h1>
             </div>
             <div></div>
