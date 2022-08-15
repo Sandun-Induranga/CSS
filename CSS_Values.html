@@ -89,17 +89,19 @@
         /*    font-size: 1rem;*/
         /*}*/
 
+
         /* Percentage */
-        section{
+        section {
             width: 800px;
             height: 500px;
             border: 2px solid red;
         }
 
-        section>div{
-            width: 80%;
+        section > div {
+            width: 80%; /* get the nearest parent width and calculate percentage */
         }
-        section>div>p{
+
+        section > div > p {
             font-size: 20%;
         }
 
