@@ -12,11 +12,20 @@
             2. Inline elements
                 get the content space
         */
+        h1{
+            /* display: inline; !* No work box model only apply margin and padding for left and right *! */
+            display: inline-block;
+            border: 2px solid red;
+            padding: 20px;
+            margin: 40px;
+        }
 
     </style>
 </head>
 <body>
 <h1>Hello There.. CSS</h1>
+<h1>Hello There.. CSS</h1>
+<br>
 <img src="assets/img/dog.jpg" alt="">
 <img src="assets/img/galle.jpg" alt="">
 <div>
