@@ -7,17 +7,34 @@
     <style>
         /* There are two types of elements
             1. Block level elements
-                get the parent full width
+                Get the parent full with 100%
+                Box Model Ok
+                Vertically, One after another
 
             2. Inline elements
-                get the content space
+                Get the content space
+                Width and height not working
+                No line breaks
+                Hold only content space
+
+            Inline- Block
+                Intermediate level of Inline and Block level
+                Width & Height Woks
+                Box Model Works
+                No line breaks.
+                Hold only content space
         */
-        h1{
+        h1 {
             /* display: inline; !* No work box model only apply margin and padding for left and right *! */
             display: inline-block;
             border: 2px solid red;
             padding: 20px;
             margin: 40px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 5px;
         }
 
     </style>
