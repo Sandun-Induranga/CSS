@@ -91,7 +91,39 @@
 
         /* Fixed */
         /* Removed from the normal flow */
-        /* Not positioned to nearest parent */
+        /* Not positioned to nearest parent
+            Doesn't move the content
+        */
+        /*main{*/
+        /*    border: 2px solid red;*/
+        /*    width: 700px;*/
+        /*    height: 500px;*/
+        /*}*/
+
+        /*section{*/
+        /*    border: 2px solid green;*/
+        /*    width: 600px;*/
+        /*    height: 400px;*/
+        /*}*/
+
+        /*div{*/
+        /*    border: 2px solid orange;*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    background-color: yellow;*/
+        /*    position: fixed;*/
+        /*    right: 0;*/
+        /*    bottom: 0;*/
+        /*}*/
+
+
+
+
+
+        /* Sticky */
+        /* Combination of fixed and relative positions
+            Doesn't move from the normal flow
+        */
         main{
             border: 2px solid red;
             width: 700px;
@@ -109,18 +141,24 @@
             width: 100px;
             height: 100px;
             background-color: yellow;
-            position: fixed;
+            /*position: fixed;*/
             right: 0;
             bottom: 0;
         }
 
+        div>h1{
+            position: sticky;
+            top: 0;
+        }
 
     </style>
 </head>
 <body>
 <main>
     <section>
-        <div></div>
+        <div>
+            <h1>Hello</h1>
+        </div>
         <h1>Inside Section</h1>
     </section>
 </main>
