@@ -14,9 +14,6 @@
         */
 
 
-
-
-
         /*!* Relative *!*/
         /*!* We can move a selected element wherever we want without breaking the flow *!*/
         /*div {*/
@@ -28,9 +25,6 @@
         /*    top: 100px;*/
         /*    position: relative;*/
         /*}*/
-
-
-
 
 
         /* Absolute */
@@ -85,10 +79,6 @@
         /*}*/
 
 
-
-
-
-
         /* Fixed */
         /* Removed from the normal flow */
         /* Not positioned to nearest parent
@@ -117,38 +107,44 @@
         /*}*/
 
 
-
-
-
         /* Sticky */
         /* Combination of fixed and relative positions
             Doesn't move from the normal flow
         */
-        main{
-            border: 2px solid red;
-            width: 700px;
-            height: 500px;
-        }
+        /*main {*/
+        /*    border: 2px solid red;*/
+        /*    width: 700px;*/
+        /*    height: 500px;*/
+        /*}*/
 
-        section{
-            border: 2px solid green;
-            width: 600px;
-            height: 400px;
-        }
+        /*section {*/
+        /*    border: 2px solid green;*/
+        /*    width: 600px;*/
+        /*    height: 400px;*/
+        /*}*/
 
-        div{
-            border: 2px solid orange;
-            width: 100px;
-            height: 100px;
-            background-color: yellow;
-            /*position: fixed;*/
-            right: 0;
-            bottom: 0;
-        }
+        /*div {*/
+        /*    border: 2px solid orange;*/
+        /*    width: 100px;*/
+        /*    height: 100px;*/
+        /*    background-color: yellow;*/
+        /*    !*position: fixed;*!*/
+        /*    right: 0;*/
+        /*    bottom: 0;*/
+        /*}*/
 
-        div>h1{
-            position: sticky;
+        /*div > h1 {*/
+        /*    position: sticky;*/
+        /*    top: 0;*/
+        /*}*/
+
+        section>div{
+            position: absolute;
             top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: purple;
         }
 
     </style>
@@ -182,33 +178,39 @@
 <!--<button>Search Customer</button>-->
 <!--<button>Update Customer</button>-->
 <!--<h1>Hello HTML</h1>-->
+<section>
+    <div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aspernatur at consectetur delectus eaque
-    eveniet expedita harum ipsa labore laudantium magnam molestiae, porro quibusdam quod, sed sit totam ut.</p>
-<p>Doloribus ex fugit id in non rerum sequi veritatis? Ad beatae culpa dolores iure similique? A adipisci commodi cum
-    dignissimos dolorem, dolores hic libero, officiis quis, ratione sint tenetur. Quibusdam.</p>
-<p>Corporis culpa dolorem eaque eius error expedita explicabo incidunt molestias, natus nisi non odit optio porro
-    possimus quisquam sint tempore. Asperiores deleniti doloribus expedita, molestiae nam natus perferendis quaerat
-    suscipit?</p>
-<p>Alias culpa dolores dolorum ducimus earum fugit impedit inventore quam sunt totam. Amet beatae commodi, deleniti
-    dolor ducimus harum iusto, magnam non porro quos sapiente, ullam! Atque incidunt molestiae quisquam.</p>
-<p>Corporis dolorem, dolores ducimus ex expedita explicabo ipsa iure labore neque, quasi quidem quo repellendus unde
-    voluptate voluptatum. Blanditiis delectus deserunt eum eveniet id laboriosam laudantium numquam quaerat sit
-    voluptas!</p>
-<p>Ab adipisci aut consectetur consequuntur, dolor dolorem doloremque est facilis fugiat, hic iste laboriosam molestiae
-    nulla numquam possimus praesentium quaerat, quas quis quod similique temporibus vero vitae? Dolor, eum,
-    incidunt.</p>
-<p>Aut error magnam maxime voluptatem voluptatibus! Aliquam aliquid, animi distinctio ipsa itaque modi, mollitia nisi
-    odio officiis perferendis quas quisquam sunt suscipit. Blanditiis consequatur ea est odio perspiciatis quia
-    voluptatem!</p>
-<p>A accusamus architecto consectetur, consequatur consequuntur cupiditate dolorum eos eum, facilis itaque iure modi
-    molestias mollitia nesciunt non nulla pariatur placeat praesentium quia quibusdam sequi ullam, unde veniam veritatis
-    vero.</p>
-<p>Aliquam at debitis enim ex inventore molestiae, nam necessitatibus nisi optio, quam quia, suscipit ut voluptates!
-    Amet cumque, debitis esse eveniet facilis ipsum maiores molestias non tempora velit vitae voluptate.</p>
-<p>Deserunt dolores iusto maiores quas temporibus. Consequatur, optio, repellendus! Corporis doloribus, eaque excepturi
-    exercitationem illum incidunt ipsam, modi mollitia necessitatibus odit provident repudiandae sapiente, sit tempore
-    vel? Corporis dignissimos, id.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam aspernatur at consectetur delectus eaque
+        eveniet expedita harum ipsa labore laudantium magnam molestiae, porro quibusdam quod, sed sit totam ut.</p>
+    <p>Doloribus ex fugit id in non rerum sequi veritatis? Ad beatae culpa dolores iure similique? A adipisci commodi cum
+        dignissimos dolorem, dolores hic libero, officiis quis, ratione sint tenetur. Quibusdam.</p>
+    <p>Corporis culpa dolorem eaque eius error expedita explicabo incidunt molestias, natus nisi non odit optio porro
+        possimus quisquam sint tempore. Asperiores deleniti doloribus expedita, molestiae nam natus perferendis quaerat
+        suscipit?</p>
+    <p>Alias culpa dolores dolorum ducimus earum fugit impedit inventore quam sunt totam. Amet beatae commodi, deleniti
+        dolor ducimus harum iusto, magnam non porro quos sapiente, ullam! Atque incidunt molestiae quisquam.</p>
+    <p>Corporis dolorem, dolores ducimus ex expedita explicabo ipsa iure labore neque, quasi quidem quo repellendus unde
+        voluptate voluptatum. Blanditiis delectus deserunt eum eveniet id laboriosam laudantium numquam quaerat sit
+        voluptas!</p>
+    <p>Ab adipisci aut consectetur consequuntur, dolor dolorem doloremque est facilis fugiat, hic iste laboriosam molestiae
+        nulla numquam possimus praesentium quaerat, quas quis quod similique temporibus vero vitae? Dolor, eum,
+        incidunt.</p>
+    <p>Aut error magnam maxime voluptatem voluptatibus! Aliquam aliquid, animi distinctio ipsa itaque modi, mollitia nisi
+        odio officiis perferendis quas quisquam sunt suscipit. Blanditiis consequatur ea est odio perspiciatis quia
+        voluptatem!</p>
+    <p>A accusamus architecto consectetur, consequatur consequuntur cupiditate dolorum eos eum, facilis itaque iure modi
+        molestias mollitia nesciunt non nulla pariatur placeat praesentium quia quibusdam sequi ullam, unde veniam veritatis
+        vero.</p>
+    <p>Aliquam at debitis enim ex inventore molestiae, nam necessitatibus nisi optio, quam quia, suscipit ut voluptates!
+        Amet cumque, debitis esse eveniet facilis ipsum maiores molestias non tempora velit vitae voluptate.</p>
+    <p>Deserunt dolores iusto maiores quas temporibus. Consequatur, optio, repellendus! Corporis doloribus, eaque excepturi
+        exercitationem illum incidunt ipsam, modi mollitia necessitatibus odit provident repudiandae sapiente, sit tempore
+        vel? Corporis dignissimos, id.</p>
+
+</section>
 
 </body>
 </html>
