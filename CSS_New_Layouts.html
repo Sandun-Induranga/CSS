@@ -7,7 +7,7 @@
 
         /* Flex Box is a new layout which was introduced to create one directional rows and columns
             By adding display: flex; to a element it convert to a flex container and all the elements inside that container will adjust to the container height
-            But width of the element calculated according to the content size
+            But width of the element calculated according to the content size of the element
          */
 
         section {
@@ -17,13 +17,23 @@
             align-items: center; /* flex-start(default) ,flex-end, center */  /*Cross(Y) axis */
             justify-content: space-evenly; /* flex-start(default) ,flex-end, center, space-around, space-between, space-evenly */ /* Main(X) axis */
             border: 1px solid red;
-            flex-wrap: wrap; /* default value is nowrap */
+            /*flex-wrap: wrap; !* default value is nowrap *!*/
         }
 
         section > div {
             border: 1px solid green;
             height: 50px;
             width: 50px;
+
+            /* There are three properties in flex items
+
+                flex-grow (default 0)
+                flex-shrink (default 1)
+                flex-basis (auto or item width)
+            */
+
+            flex-shrink: 0; /* if 0 shrink factor is off */
+            /* By doing this flex items will overflow the flex container */
         }
 
     </style>
