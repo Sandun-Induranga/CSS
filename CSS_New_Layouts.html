@@ -14,7 +14,7 @@
             display: flex;
             height: 400px;
             flex-direction: row-reverse; /* row , column, row-reverse column-reverse */
-            align-items: center; /* flex-start(default) ,flex-end, center */  /*Cross(Y) axis */
+            align-items: center; /* flex-start(default) ,flex-end, center */ /*Cross(Y) axis */
             justify-content: space-evenly; /* flex-start(default) ,flex-end, center, space-around, space-between, space-evenly */ /* Main(X) axis */
             border: 1px solid red;
             /*flex-wrap: wrap; !* default value is nowrap *!*/
@@ -29,23 +29,27 @@
 
                 flex-grow (default 0)    -    The unit-less proportion value
                 flex-shrink (default 1)
-                flex-basis (auto or item width)
+                flex-basis (default auto or item width)
             */
 
-            flex-shrink: 1; /* if 0 shrink factor is off */
+            flex-shrink: 1; /* 0 means shrink factor is off */
             /* By doing this flex items will overflow the flex container */
 
             /*flex-grow: 1;*/
         }
 
-        section>div:nth-child(1){
+        section > div:nth-child(1) {
             background-color: red;
-            flex-grow: 1;
+            /*flex-grow: 2;*/
+            flex-basis: 500px;
+            order: 1; /* default 0 */
         }
 
-        section>div:nth-child(2){
+        section > div:nth-child(2) {
             background-color: green;
-            flex-grow: 1;
+            /*flex-grow: 1;*/
+            flex-basis: 100px;
+            order: 3;
         }
 
     </style>
@@ -59,32 +63,32 @@
     <div>D</div>
     <div>E</div>
     <div>F</div>
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
-<!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
+    <!--    <div>C</div>-->
 
 </section>
 </body>
