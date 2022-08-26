@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <title>Grid Layout</title>
     <style>
-        section{
+        section {
             width: 500px;
             height: 500px;
             border: 2px solid crimson;
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr; /* How many rows for the grid */
+            grid-template-columns: 1fr 1fr 1fr 1fr; /* How many columns for the grid */
+            column-gap: 10px;
+            row-gap: 10px;
         }
-        section>div{
+
+        section > div {
             border: 1px solid red;
         }
     </style>
 </head>
 <body>
-<section>
-    <div>A</div>
+<section> <!-- Grid Container -->
+
+    <div>A</div> <!-- Grid Items -->
     <div>B</div>
     <div>C</div>
     <div>D</div>
@@ -28,6 +32,10 @@
     <div>G</div>
     <div>H</div>
     <div>I</div>
+    <div>J</div>
+    <div>K</div>
+    <div>L</div>
+
 </section>
 </body>
 </html>
