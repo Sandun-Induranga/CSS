@@ -27,13 +27,25 @@
 
             /* There are three properties in flex items
 
-                flex-grow (default 0)
+                flex-grow (default 0)    -    The unit-less proportion value
                 flex-shrink (default 1)
                 flex-basis (auto or item width)
             */
 
-            flex-shrink: 0; /* if 0 shrink factor is off */
+            flex-shrink: 1; /* if 0 shrink factor is off */
             /* By doing this flex items will overflow the flex container */
+
+            /*flex-grow: 1;*/
+        }
+
+        section>div:nth-child(1){
+            background-color: red;
+            flex-grow: 1;
+        }
+
+        section>div:nth-child(2){
+            background-color: green;
+            flex-grow: 1;
         }
 
     </style>
@@ -44,35 +56,35 @@
     <div>A</div><!-- Flex items -->
     <div>B</div>
     <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
-    <div>C</div>
+    <div>D</div>
+    <div>E</div>
+    <div>F</div>
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
+<!--    <div>C</div>-->
 
 </section>
 </body>
