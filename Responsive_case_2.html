@@ -162,7 +162,7 @@
         }
 
 
-        @media all and (min-width: 0) and (max-width: 375px) {
+        @media all and (max-width: 425px) {
 
             header {
                 display: flex;
@@ -209,7 +209,6 @@
                 position: relative;
             }
 
-
             main > section > section:first-child > div {
                 position: relative;
                 width: 93vw;
@@ -217,14 +216,35 @@
                 background-position: center !important;
             }
 
-
             main > section > section:first-child > div:nth-child(2) {
                 left: 0;
             }
+        }
 
-            main > section > section:first-child > div:nth-child(2) {
-                left: 0;
+        @media all and (min-width: 426px) and (max-width: 768px){
+            main > nav {
+                width: 200px;
             }
+
+            main > section > section:first-child > div {
+                background-position: center !important;
+            }
+
+            header > nav{
+                top: 15px;
+            }
+
+            header > nav > ul > li {
+                padding: 0 5px 0 5px;
+                font-size: 16px;
+            }
+
+
+            main > section {
+                margin-left: 200px;
+                padding: 10px;
+            }
+
         }
 
     </style>
