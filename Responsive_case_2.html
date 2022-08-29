@@ -193,15 +193,37 @@
 
             header > nav > ul > li {
                 padding: 0 5px 0 5px;
-                font-size: 15px;
+                font-size: 14px;
             }
 
             main > nav {
                 display: none;
             }
 
-            main>section{
+            main > section {
                 margin-left: 0;
+            }
+
+            main > section > section:first-child {
+                height: 900px;
+                position: relative;
+            }
+
+
+            main > section > section:first-child > div {
+                position: relative;
+                width: 93vw;
+                height: calc(100% / 3);
+                background-position: center !important;
+            }
+
+
+            main > section > section:first-child > div:nth-child(2) {
+                left: 0;
+            }
+
+            main > section > section:first-child > div:nth-child(2) {
+                left: 0;
             }
         }
 
