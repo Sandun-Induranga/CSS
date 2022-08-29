@@ -10,7 +10,11 @@
             border: 2px solid crimson;
             display: grid;
             grid-template-rows: 1fr 1fr 1fr; /* How many rows for the grid */
-            grid-template-columns: 1fr 1fr 1fr 1fr; /* How many columns for the grid */
+            /*grid-template-columns: 1fr 1fr 1fr 1fr; !* How many columns for the grid *!*/
+            grid-template-columns: repeat(4, 1fr); /* Another way */
+
+            /* fr unit represent a fraction of the available space in the grid container */
+
             column-gap: 10px;
             row-gap: 10px;
         }
