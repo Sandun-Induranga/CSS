@@ -19,13 +19,7 @@
         /*    }*/
         /*}*/
 
-
-        @media all and (max-width: 425px) {
-            h1 {
-                color: chocolate;
-            }
-        }
-
+        /* Apply if range between 0 - 375px */
         @media all and (max-width: 375px) {
             h1 {
                 color: green;
@@ -33,6 +27,30 @@
 
             h2 {
                 color: orange;
+            }
+        }
+
+        @media all and (min-width: 375px) and (max-width: 425px) {
+            h1 {
+                color: chocolate;
+            }
+        }
+
+        @media all and (min-width: 425px) and (max-width: 768px) {
+            h1 {
+                color: deeppink;
+            }
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1024px) {
+            h1 {
+                color: yellow;
+            }
+        }
+
+        @media all and (min-width: 1024px) and (max-width: 1440px) {
+            h1 {
+                color: blue;
             }
         }
 
