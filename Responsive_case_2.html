@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Basic Web Layout</title>
+    <title>Responsive Web Layout</title>
     <link href="assets/css/normalize.css" rel="stylesheet">
     <meta content="width=device-width initial-scale=1" name="viewport">
     <link href="assets/img/fav.png" rel="icon">
@@ -162,9 +162,9 @@
         }
 
 
-        @media all and (min-width: 0) and (max-width: 375px){
+        @media all and (min-width: 0) and (max-width: 375px) {
 
-            header{
+            header {
                 display: flex;
                 height: 100px;
                 align-content: center;
@@ -172,12 +172,36 @@
                 flex-direction: column;
             }
 
-            header>img{
-                position: relative;
+            header > img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
             }
 
-            header >nav{
-                position: relative;
+            header > nav {
+                top: 48px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: max-content;
+            }
+
+            header > nav > ul {
+                padding: 0;
+            }
+
+            header > nav > ul > li {
+                padding: 0 5px 0 5px;
+                font-size: 15px;
+            }
+
+            main > nav {
+                display: none;
+            }
+
+            main>section{
+                margin-left: 0;
             }
         }
 
