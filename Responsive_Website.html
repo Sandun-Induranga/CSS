@@ -12,8 +12,15 @@
             color: red;
         }
 
-        @media print {
-            h1 {
+        /*!* Condition *!*/
+        /*@media print {*/
+        /*    h1 {*/
+        /*        color: green;*/
+        /*    }*/
+        /*}*/
+
+        @media all and (max-width: 375px){
+            h1{
                 color: green;
             }
         }
