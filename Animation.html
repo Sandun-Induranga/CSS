@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+
+    <style>
+
+        /* There are two parts in animations
+
+            1. Keyframes
+            2. Rules
+
+         */
+
+        div {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            animation-name: my-animation;
+            background-color: crimson;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        /*@keyframes my-animation {*/
+        /*    from {*/
+        /*        background-color: orange;*/
+        /*    }*/
+        /*    to {*/
+        /*        background-color: green;*/
+        /*    }*/
+        /*}*/
+
+        @keyframes my-animation {
+            0% {
+                background-color: orange;
+            }
+            25% {
+                background-color: green;
+            }
+            50% {
+                background-color: purple;
+            }
+            75% {
+                background-color: blue;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
