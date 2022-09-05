@@ -20,7 +20,12 @@
             animation-name: my-animation;
             background-color: crimson;
             animation-duration: 10s;
-            animation-iteration-count: infinite;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            /*animation-fill-mode: forwards; !* Apply the changes in animation at 100% *!*/
+            /*animation-fill-mode: backwards; !* Apply the 0% changes before start the animation *!*/
+            animation-fill-mode: both; /* Combination of forward and backward */
+            animation-timing-function: linear; /* Apply keyframes same time(duration divided same to keyframes) can create function with inspector */
         }
 
         /*@keyframes my-animation {*/
