@@ -15,7 +15,8 @@
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,13 +28,16 @@
                     <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
                         Dropdown
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
@@ -48,6 +52,31 @@
         </div>
     </div>
 </nav>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../assets/img/dog.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item">
+            <img src="../assets/img/galle.jpg" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item">
+            <img src="../assets/img/gif.gif" class="d-block w-100" alt="..." height="600px">
+        </div>
+        <div class="carousel-item">
+            <img src="../assets/img/images.jpeg" class="d-block w-100" alt="..." height="600px">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
 <h1>What are CSS Frameworks</h1>
 <h2>Frameworks are common solutions for common problems</h2>
@@ -65,28 +94,6 @@
 <button class="btn btn-outline-primary">Save Customer</button>
 
 <button class="btn btn-outline-primary btn-lg">Save Customer</button>
-
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="../assets/img/dog.jpg" class="d-block w-100" alt="..." height="600px">
-        </div>
-        <div class="carousel-item">
-            <img src="../assets/img/galle.jpg" class="d-block w-100" alt="..." height="600px">
-        </div>
-        <div class="carousel-item">
-            <img src="../assets/img/gif.gif" class="d-block w-100" alt="..." height="600px">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
 
 <br><br>
 
@@ -106,8 +113,60 @@
         <td>Galle</td>
         <td>10000</td>
     </tr>
+    <tr>
+        <td>C001</td>
+        <td>Dasun</td>
+        <td>Galle</td>
+        <td>10000</td>
+    </tr>
+    <tr>
+        <td>C001</td>
+        <td>Dasun</td>
+        <td>Galle</td>
+        <td>10000</td>
+    </tr>
+    <tr>
+        <td>C001</td>
+        <td>Dasun</td>
+        <td>Galle</td>
+        <td>10000</td>
+    </tr>
     </tbody>
 </table>
+<br>
+<br>
+
+<form>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Customer Name</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Customer Address</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Customer Age</label>
+        <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">I agree with terms and conditions</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<br>
+<br>
 
 <!-- Import js for  bootstrap -->
 <script src="assets/js/bootstrap.min.js"></script>
